@@ -107,7 +107,7 @@ var myMap = L.map("map", {
 	center: [0, 0],
 	zoom: 3});
 
-Lizzie_Marker.addTo(myMap);
+
 streets.addTo(myMap);
 marker.addTo(myMap);
 Sam_Marker.addTo(myMap);
@@ -119,6 +119,8 @@ Abrum_Marker.addTo(myMap);
 Toby_Marker.addTo(myMap);
 Kiyah_Marker.addTo(myMap);
 Denilson_Marker.addTo(myMap);
+Lizzie_Marker.addTo(myMap);
+
 POB_Marker.addTo(myMap);
 HawthorneAcademy_Marker.addTo(myMap);
 NorthMeck_Marker.addTo(myMap);
