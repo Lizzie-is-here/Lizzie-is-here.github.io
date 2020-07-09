@@ -69,6 +69,12 @@ var Denilson_Marker = L.marker([-22.9027800, -43.2075000], {
 });
 Denilson_Marker.bindPopup("Denilson says Hello from Rio De Janeiro");
 
+//Section 003 Markers
+var Lizzie_Marker = L.marker([51.1657, 10.4515], {
+	title: "Lizzie wants to travel to Germany"
+});
+
+Lizzie_Marker.bindPopup("Lizzie says hello from Germany!");
 
 // Schools
 var POB_Marker = L.marker([35.2387527, -80.8920165], {
@@ -100,7 +106,8 @@ Butler_Marker.bindPopup("Butler High School");
 var myMap = L.map("map", {
 	center: [0, 0],
 	zoom: 3});
-	
+
+Lizzie_Marker.addTo(myMap);
 streets.addTo(myMap);
 marker.addTo(myMap);
 Sam_Marker.addTo(myMap);
