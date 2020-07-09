@@ -69,12 +69,36 @@ var Denilson_Marker = L.marker([-22.9027800, -43.2075000], {
 });
 Denilson_Marker.bindPopup("Denilson says Hello from Rio De Janeiro");
 
-//Section 003 Markers
-var Lizzie_Marker = L.marker([51.1657, 10.4515], {
-	title: "Lizzie wants to travel to Germany"
+// Section 003
+var Dr_A_Marker = L.marker([3.2028, 73.2207], {
+	title: "Dr. A wants to travel to the Maldives Islands"
 });
 
+Dr_A_Marker.bindPopup("Dr. A says hello from the Maldives Islands!");
+
+var Brooke_Marker = L.marker([25.0443, -77.3504], {
+    title: "Brooke wants to travel to the Bahamas"
+});
+
+Brooke_Marker.bindPopup("Brooke says Hello from the Bahamas!");
+
+var Lizzie_Marker = L.marker([51.1657, 10.4515], { title: "Lizzie wants to travel to Germany" });  
 Lizzie_Marker.bindPopup("Lizzie says hello from Germany!");
+
+var Damon_Marker = L.marker([35.689488, 139.691706], {
+    title: "Damon wants to travel to tokyo"
+});
+Damon_Marker.bindPopup("Damon says hello from tokyo");
+
+var Andrew_Marker = L.marker([33.7490, -84.3880], {
+    title: "Andrew wants to travel to Atlanta"
+});
+Andrew_Marker.bindPopup("Andrew says hello from Atlanta!");
+
+var Ariana_Marker = L.marker([19.8968, -155.5828], {
+    title: "Ariana wants to travel to Hawaii"
+});
+Ariana_Marker.bindPopup("Ariana says hello from Hawaii!");
 
 // Schools
 var POB_Marker = L.marker([35.2387527, -80.8920165], {
@@ -106,8 +130,7 @@ Butler_Marker.bindPopup("Butler High School");
 var myMap = L.map("map", {
 	center: [0, 0],
 	zoom: 3});
-
-
+	
 streets.addTo(myMap);
 marker.addTo(myMap);
 Sam_Marker.addTo(myMap);
@@ -119,8 +142,12 @@ Abrum_Marker.addTo(myMap);
 Toby_Marker.addTo(myMap);
 Kiyah_Marker.addTo(myMap);
 Denilson_Marker.addTo(myMap);
+Dr_A_Marker.addTo(myMap);
+Brooke_Marker.addTo(myMap);
 Lizzie_Marker.addTo(myMap);
-
+Damon_Marker.addTo(myMap);
+Andrew_Marker.addTo(myMap);
+Ariana_Marker.addTo(myMap)
 POB_Marker.addTo(myMap);
 HawthorneAcademy_Marker.addTo(myMap);
 NorthMeck_Marker.addTo(myMap);
